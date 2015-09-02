@@ -13,8 +13,7 @@ and your writeup matter for your overall grade.
 
 ```{r}
 
-sequence <- seq(from = 1, to = 100, by = 1)
-# will generate a sequence from 1 to 100. 100 numbers total #
+
 FizzBuzz =function(x) {
 for (x in 1:100){
     if (x%%15==0) print("FizzBuzz")
