@@ -1,4 +1,4 @@
-Homework 0 - TeamName
+Homework 0 - Team 4 Duke Dinosaurs
 ========================================================
 
 ### Implementation
@@ -12,10 +12,24 @@ and your writeup matter for your overall grade.
 -->
 
 ```{r}
-fizzbuzz = function(n)
-{
+sequence <- seq(from = 1, to = 100, by = 1)
+# will generate a sequence from 1 to 100. 100 numbers total #
 
+fizzbuzz = function(n) {
+  if (n %% 3 = 0 & n %% 5 = 0) {
+     return ("FizzBuzz")
+  } else 
+  if (n %% 3 = 0 & n %% 5 != 0) {
+     return ("Fizz")
+  } else 
+  if (n %% 5 = 0 & n %% 3 != 0) {
+     return ("Buzz")
+  } else {
+     return(n)
+  }
 }
+
+
 ```
 
 ### Output
