@@ -12,22 +12,20 @@ and your writeup matter for your overall grade.
 -->
 
 ```{r}
+
 sequence <- seq(from = 1, to = 100, by = 1)
 # will generate a sequence from 1 to 100. 100 numbers total #
-
-fizzbuzz = function(n) {
-  if (n %% 3 = 0 & n %% 5 = 0) {
-     return ("FizzBuzz")
-  } else 
-  if (n %% 3 = 0 & n %% 5 != 0) {
-     return ("Fizz")
-  } else 
-  if (n %% 5 = 0 & n %% 3 != 0) {
-     return ("Buzz")
-  } else {
-     return(n)
-  }
+FizzBuzz =function(x) {
+for (x in 1:100){
+    if (x%%15==0) print("FizzBuzz")
+    else if (x%%3==0) print("Fizz") 
+    else if (x%%5==0) print("Buzz")
+    else 
+    print(x)
 }
+}
+
+FizzBuzz(x)
 
 
 ```
