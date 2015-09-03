@@ -1,3 +1,6 @@
+
+
+
 Homework 0 - Team 4 Duke Dinosaurs
 ========================================================
 
@@ -15,8 +18,18 @@ and your writeup matter for your overall grade.
 
 sequence <- seq(from = 1, to = 100, by = 1)
 # will generate a sequence from 1 to 100. 100 numbers total #
-FizzBuzz =function(x) {
-for (x in 1:100){
+FizzBuzz =function(n) {
+ if(!is.vector(n)){
+    stop("Please input a integer or a vector of integers.")
+  }
+  if(!is.integer(n)){
+    stop("Please input a integer or a vector of integers.")
+  }
+  if(length(n)==1){
+    n <- 1:n
+  }
+
+for (x in n){
     if (x%%15==0) print("FizzBuzz")
     else if (x%%3==0) print("Fizz") 
     else if (x%%5==0) print("Buzz")
