@@ -36,7 +36,7 @@ FizzBuzz =function(n) {
   }
 }
 
-FizzBuzz(x)
+FizzBuzz(100)
 ø
 
 ```
