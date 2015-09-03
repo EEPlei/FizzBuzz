@@ -27,21 +27,17 @@ FizzBuzz =function(n) {
     n <- 1:n
   }
 
-for (x in n){
-
-FizzBuzz =function(x) {
-for (x in 1:100){
-
+  for (x in n){
     if (x%%15==0) print("FizzBuzz")
     else if (x%%3==0) print("Fizz") 
     else if (x%%5==0) print("Buzz")
     else 
     print(x)
-}
+  }
 }
 
 FizzBuzz(x)
-
+ø
 
 ```
 
