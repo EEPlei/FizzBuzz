@@ -36,8 +36,6 @@ FizzBuzz =function(n) {
   }
 }
 
-FizzBuzz(100)
-ø
 
 ```
 
