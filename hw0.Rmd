@@ -16,6 +16,7 @@ and your writeup matter for your overall grade.
 
 ```{r}
 
+<<<<<<< HEAD
 sequence <- seq(from = 1, to = 100, by = 1)
 # will generate a sequence from 1 to 100. 100 numbers total #
 FizzBuzz =function(n) {
@@ -30,6 +31,11 @@ FizzBuzz =function(n) {
   }
 
 for (x in n){
+=======
+
+FizzBuzz =function(x) {
+for (x in 1:100){
+>>>>>>> ba561e5fddc13e422955ded8d7db4bc3d0d5b764
     if (x%%15==0) print("FizzBuzz")
     else if (x%%3==0) print("Fizz") 
     else if (x%%5==0) print("Buzz")
