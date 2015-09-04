@@ -23,27 +23,22 @@ FizzBuzz = function(n) {
  if(!is.vector(n)){
     stop("Please input a integer or a vector of integers.")
   }
-  if(!is.integer(n)){
+  if(n%%1 !=0){
     stop("Please input a integer or a vector of integers.")
   }
   if(length(n)==1){
     n <- 1:n
   }
 
+
 for (x in n){
-
-FizzBuzz = function(x) {
-for (x in 1:100){
-
     if (x%%15==0) print("FizzBuzz")
     else if (x%%3==0) print("Fizz") 
     else if (x%%5==0) print("Buzz")
     else 
     print(x)
+  }
 }
-}
-
-FizzBuzz(x)
 
 
 ```
