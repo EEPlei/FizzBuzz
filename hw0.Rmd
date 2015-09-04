@@ -14,9 +14,12 @@ to implementing the function. Not both code formating / style
 and your writeup matter for your overall grade.
 -->
 
-```{r}
+```{r} # Our approach to this problem was to first defend our function 
+against results that we don't want. As you can see we have 3 If
+Statements detailing that the function should stop if the input is 
+not a vector, not an integer, and if its length equals one. #
 
-FizzBuzz =function(n) {
+FizzBuzz = function(n) {
  if(!is.vector(n)){
     stop("Please input a integer or a vector of integers.")
   }
@@ -29,7 +32,7 @@ FizzBuzz =function(n) {
 
 for (x in n){
 
-FizzBuzz =function(x) {
+FizzBuzz = function(x) {
 for (x in 1:100){
 
     if (x%%15==0) print("FizzBuzz")
