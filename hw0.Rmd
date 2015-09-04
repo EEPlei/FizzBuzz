@@ -1,3 +1,6 @@
+
+
+
 Homework 0 - Team 4 Duke Dinosaurs
 ========================================================
 
@@ -11,22 +14,69 @@ to implementing the function. Not both code formating / style
 and your writeup matter for your overall grade.
 -->
 
-```{r}
+The layout of our function is simple. Inside a function that we are
+storing inside variable "FizzBuzz", we used If Statements and For Loops
+to solve the problem.
+ 
+Our function's input value is "n". 
 
-sequence <- seq(from = 1, to = 100, by = 1)
-# will generate a sequence from 1 to 100. 100 numbers total #
-FizzBuzz =function(x) {
-for (x in 1:100){
+Inside our function, the first If Statement tells the function that 
+should the input n not be a vector (using "!" to symbolize not), the 
+function should stop running the function and give an error message 
+"Please input ...".
+ 
+The next If Statement says that should our input modulo 1 not equal 0,
+the function will stop running and the same error message will appear.
+Since non-integers, such as 2.5, modulo 1 will not produce a 0; 
+2.5%%1=0.5. 
+
+The next If Statement says that should the length of our input n equal 1, 
+n should be a vector composed of the sequence from 1 to n. 
+
+In our For Loop, we specify some conditions for the elements, x, inside n. 
+
+Our If Statement says that if the element modulo 15 equals 0, the word
+"FizzBuzz" will print. 
+
+For the cases where the element modulo 15 doesn't equal 1, if the element 
+modulo 3 equals 0, the word "Fizz" will print.
+
+For the cases where the first two conditions aren't met, if the element 
+modulo 5 equals 0, the word "Buzz" will print. 
+
+For all the remaining cases, the element will just print itself. 
+
+We then call our function with the command FizzBuzz and let our input n
+equal 100. 
+
+In conclusion, we first specified the conditions for the function's 
+input. We then looped into the sequence we created to determine what 
+should appear within that sequence and when it should appear. Lastly, 
+we ran the function.
+ 
+```{r} 
+FizzBuzz = function(n) {
+ if(!is.vector(n)){
+    stop("Please input a integer or a vector of integers.")
+  }
+  if(!all(n%%1 ==0)){
+    stop("Please input a integer or a vector of integers.")
+  }
+  if(length(n)==1){
+    n <- 1:n
+  }
+
+
+for (x in n){
     if (x%%15==0) print("FizzBuzz")
     else if (x%%3==0) print("Fizz") 
     else if (x%%5==0) print("Buzz")
     else 
     print(x)
-}
+  }
 }
 
-FizzBuzz(x)
-
+FizzBuzz(n=100)
 
 ```
 
