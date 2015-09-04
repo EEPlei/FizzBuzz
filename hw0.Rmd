@@ -49,8 +49,12 @@ For all the remaining cases, the element will just print itself.
 We then call our function with the command FizzBuzz and let our input n
 equal 100. 
 
-```{r}
-
+In conclusion, we first specified the conditions for the function's 
+input. We then looped into the sequence we created to determine what 
+should appear within that sequence and when it should appear. Lastly, 
+we ran the function.
+ 
+```{r} 
 FizzBuzz = function(n) {
  if(!is.vector(n)){
     stop("Please input a integer or a vector of integers.")
