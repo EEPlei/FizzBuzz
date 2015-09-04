@@ -14,10 +14,13 @@ to implementing the function. Not both code formating / style
 and your writeup matter for your overall grade.
 -->
 
-```{r}  Our approach to this problem was to first defend our function 
+ Our approach to this problem was to first defend our function
 against results that we don't want. As you can see we have 3 If
-Statements detailing that the function should stop if the input is 
-not a vector, not an integer, and if its length equals one. 
+Statements detailing that the function should stop if the input is
+not a vector, not an integer, and if its length equals one.
+
+
+```{r} 
 
 FizzBuzz = function(n) {
  if(!is.vector(n)){
