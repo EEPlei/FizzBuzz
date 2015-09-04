@@ -15,17 +15,17 @@ and your writeup matter for your overall grade.
 -->
 
 The layout of our function is simple. Inside a function that we are
-storing inside variable "FizzBuzz", we used If Statements and For Loops
-to solve the problem.
+storing inside variable "FizzBuzz", we used the "IF" command within 
+the forloop function to solve the problem.
  
 Our function's input value is "n". 
 
-Inside our function, the first If Statement tells the function that 
-should the input n not be a vector (using "!" to symbolize not), the 
-function should stop running the function and give an error message 
+Inside our function, the first "IF" Statement tells the function that 
+should the input "n" not be a vector (using "!" to symbolize not), the 
+function should stop running the function and return an error message 
 "Please input ...".
  
-The next If Statement says that should our input modulo 1 not equal 0,
+The next "IF" Statement says that should our input modulo 1 not equal 0,
 the function will stop running and the same error message will appear.
 Since non-integers, such as 2.5, modulo 1 will not produce a 0; 
 2.5%%1=0.5. 
@@ -33,14 +33,13 @@ Since non-integers, such as 2.5, modulo 1 will not produce a 0;
 The next If Statement says that should the length of our input n equal 1, 
 n should be a vector composed of the sequence from 1 to n. 
 
-In our For Loop, we specify some conditions for the elements, x, inside n. 
+In our forloop, we specify some conditions for the elements, x, inside n. 
 
-Our If Statement says that if the element modulo 15 equals 0, the word
+Our "IF" Statement says that if the element modulo 15 equals 0, the word
 "FizzBuzz" will print. 
 
 For the cases where the element modulo 15 doesn't equal 1, if the element 
 modulo 3 equals 0, the word "Fizz" will print.
-
 For the cases where the first two conditions aren't met, if the element 
 modulo 5 equals 0, the word "Buzz" will print. 
 
@@ -78,17 +77,4 @@ for (x in n){
 
 FizzBuzz(n=100)
 
-```
 
-### Output
-
-<!--
-Use this section to show the output of your 
-fizzbuzz function for integer values from 1 to 100.
-
-No writeup is necessary for this section.
--->
-
-```{r}
-
-```
