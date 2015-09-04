@@ -59,7 +59,7 @@ FizzBuzz = function(n) {
  if(!is.vector(n)){
     stop("Please input a integer or a vector of integers.")
   }
-  if(!all(n%%1 ==0)){
+  if(!all(n%%1==0)){
     stop("Please input a integer or a vector of integers.")
   }
   if(length(n)==1){
