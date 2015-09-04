@@ -14,13 +14,42 @@ to implementing the function. Not both code formating / style
 and your writeup matter for your overall grade.
 -->
 
- Our approach to this problem was to first defend our function
-against results that we don't want. As you can see we have 3 If
-Statements detailing that the function should stop if the input is
-not a vector, not an integer, and if its length equals one.
+The layout of our function is simple. Inside a function that we are
+storing inside variable "FizzBuzz", we used If Statements and For Loops
+to solve the problem.
+ 
+Our function's input value is "n". 
 
+Inside our function, the first If Statement tells the function that 
+should the input n not be a vector (using "!" to symbolize not), the 
+function should stop running the function and give an error message 
+"Please input ...".
+ 
+The next If Statement says that should our input modulo 1 not equal 0,
+the function will stop running and the same error message will appear.
+Since non-integers, such as 2.5, modulo 1 will not produce a 0; 
+2.5%%1=0.5. 
 
-```{r} 
+The next If Statement says that should the length of our input n equal 1, 
+n should be a vector composed of the sequence from 1 to n. 
+
+In our For Loop, we specify some conditions for the elements, x, inside n. 
+
+Our If Statement says that if the element modulo 15 equals 0, the word
+"FizzBuzz" will print. 
+
+For the cases where the element modulo 15 doesn't equal 1, if the element 
+modulo 3 equals 0, the word "Fizz" will print.
+
+For the cases where the first two conditions aren't met, if the element 
+modulo 5 equals 0, the word "Buzz" will print. 
+
+For all the remaining cases, the element will just print itself. 
+
+We then call our function with the command FizzBuzz and let our input n
+equal 100. 
+
+```{r}
 
 FizzBuzz = function(n) {
  if(!is.vector(n)){
@@ -43,6 +72,7 @@ for (x in n){
   }
 }
 
+FizzBuzz(n=100)
 
 ```
 
