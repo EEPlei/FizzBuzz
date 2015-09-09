@@ -25,28 +25,21 @@ should the input "n" not be a vector (using "!" to symbolize not), the
 function should stop running the function and return an error message 
 "Please input ...".
  
-The next "IF" Statement says that should our input modulo 1 not equal 0,
-the function will stop running and the same error message will appear.
-Since non-integers, such as 2.5, modulo 1 will not produce a 0; 
-2.5%%1=0.5. 
+The first forloop, we have two "IF" Statements. 
+The first tells R that if the element(s) in the input isn't a numeric, it should display an error message requesting the input be nuemeric. 
+The second tells R that if the element(s) in the input isn't an integer, it should display an error message requesting the input be of integers. 
 
-The next If Statement says that should the length of our input n equal 1, 
-n should be a vector composed of the sequence from 1 to n. 
-
-In our forloop, we specify some conditions for the elements, x, inside n. 
-
+In our second forloop, we specify some conditions for the elements, x, inside n.
 Our "IF" Statement says that if the element modulo 15 equals 0, the word
 "FizzBuzz" will print. 
-
 For the cases where the element modulo 15 doesn't equal 1, if the element 
 modulo 3 equals 0, the word "Fizz" will print.
 For the cases where the first two conditions aren't met, if the element 
 modulo 5 equals 0, the word "Buzz" will print. 
-
 For all the remaining cases, the element will just print itself. 
 
 We then call our function with the command FizzBuzz and let our input n
-equal 100. 
+be the sequence from 1 to 100. 
 
 In conclusion, we first specified the conditions for the function's 
 input. We then looped into the sequence we created to determine what 
@@ -63,16 +56,23 @@ FizzBuzz = function(n) {
     # if elements in n aren't numeric, show this error message #
             if (!(i%%1==0)) stop("Please input integers only")
     # if elements in n modulo 1 don't equal 0, show this error message #
-  } 
+  } # for loop that will go through each element in input n #
   for (x in n){
     if (x%%15==0) print("FizzBuzz")
+    # in the case where the elemtn in n is divisble by 15 #
+    # print 'FizzBuzz' #
     else if (x%%3==0) print("Fizz") 
-    else if (x%%5==0) print("Buzz")
+    # in the case where the element in n is divisble by 3 # 
+    # print 'Fizz' #
+    else if (x%%5==0) print("Buzz") 
+    # in the case where the element in n is divisible by 5 #
+    # print 'Buzz' #
     else 
-    print(x)
-  }
+    print(x) # prints out element inside input n #
+  } 
+  # for loop that will go through each element in n and print out each element #
 }
 
-FizzBuzz(n=100)
-
+FizzBuzz(n=1:100)
+# call the function and let the input be the seqeunce from 1 to 100 #
 
