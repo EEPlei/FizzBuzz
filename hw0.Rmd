@@ -55,17 +55,16 @@ we ran the function.
  
 ```{r} 
 FizzBuzz = function(n) {
- if(!is.vector(n)){
+  if(!is.vector(n)){
     stop("Please input a integer or a vector of integers.")
-  }
-  if(!all(n%%1==0)){
-    stop("Please input a integer or a vector of integers.")
-  }
-  if(length(n)==1){
-    n <- 1:n
-  }
-
-
+  } # if n isn't a vector, show this error message #
+  for (i in n){
+            if (!is.numeric(i)) stop("Please input numerics only")
+    # if elements in n aren't numeric, show this error message #
+            if (!(i%%1==0)) stop("Please input integers only")
+    # if elements in n modulo 1 don't equal 0, show this error message #
+  } 
+  
 for (x in n){
     if (x%%15==0) print("FizzBuzz")
     else if (x%%3==0) print("Fizz") 
