@@ -23,10 +23,10 @@ This is not a terribly complex or difficult task, and solutions in R and many ot
 
 Use your FizzBuzz function to display the correct output for an input of all integers from 1 to 100.
 
-<div style="text-align: right">
+<div style="text-align: left">
 Assignment from STA 523 Statistical Programming with Professor Colin Rundel    
 </div>   
-<div style="text-align: right">
+<div style="text-align: left">
 http://www2.stat.duke.edu/~cr173/Sta523_Fa15/hw/hw0.html 
 </div>
 
