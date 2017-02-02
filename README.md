@@ -25,14 +25,6 @@ This is not a terribly complex or difficult task, and solutions in R and many ot
 Use your FizzBuzz function to display the correct output for an input of all integers from 1 to 100.
 
 
-## Submission and Grading
-
-This homework is due by 2 pm Saturday, September 5th. You are to complete the assignment as a group and to keep everything (code, write ups, etc.) on your team's github repository (commit early and often). All team members are expected to contribute equally to the completion of this assignment and group assessments will be given at its completion - anyone judged to not have sufficient contributed to the final product will have their grade penalized. While different teams members may have different coding backgrounds and abilities, it is the responsibility of every team member to understand how and why all code in the assignment works.
-
-The final product for this assignment should be a single Rmd document (a template of which has been provided) that contains all code and text for all tasks and is formated to clearly present all of your results. Style and format does count for this assignment, so please take the time to make sure everything looks good and your text and code are properly formated. This document must be reproducible and I must be able to compile it with minimal intervention - documents that do not compile will be given a 0. To this end we will be using the Wercker continuous integration tools to test all of your code, as such everytime you push to github Wercker will attempt to compile your Rmd file and report back on its status. If Wercker is reporting that the build passes then your Rmd document is compiling.
-
-For this class I will not enforce any particular coding style, however it is important that the code you and your team produces is *readable* and *consistent* in its formating. There are several R style guides online, e.g. from [Google](https://google-styleguide.googlecode.com/svn/trunk/Rguide.xml) and from [Hadley Wickham](http://r-pkgs.had.co.nz/style.html). As a group you should decide on what conventions you will use and the entire team should conform to them as much as possible.
-
 <br/>
 
 * Lei Qian - lei.qian@duke.edu
