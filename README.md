@@ -22,11 +22,8 @@ This is not a terribly complex or difficult task, and solutions in R and many ot
 ## Task 2 - FizzBuzz(1:100)
 
 Use your FizzBuzz function to display the correct output for an input of all integers from 1 to 100.
-$$
-\begin{align}
-- Assignment from STA 523 Statistical Programming with Professor Colin Rundel &\\ http://www2.stat.duke.edu/~cr173/Sta523_Fa15/hw/hw0.html&
-\end{align}
-$$
+
+<div style="text-align: right"> - Assignment from STA 523 Statistical Programming with Professor Colin Rundel \newline http://www2.stat.duke.edu/~cr173/Sta523_Fa15/hw/hw0.html </div>
 <br/>
 
 * Lei Qian - lei.qian@duke.edu
